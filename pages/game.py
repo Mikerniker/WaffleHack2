@@ -68,7 +68,7 @@ while st.session_state.game_state == 'playing':
 
             countdown_on = True
             if countdown_on:
-                for i in range(3, -1, -1):
+                for i in range(4, -1, -1):
                     countdown(i, countdown_placeholder)
                     time.sleep(0.5)
                 countdown_on = False
