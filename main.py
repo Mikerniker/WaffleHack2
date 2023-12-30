@@ -18,7 +18,7 @@ remote_css('https://fonts.googleapis.com/css2?family=Afacad:wght@700&display=swa
 # Banner Section
 banner_image = Image.open('images/waffle2.png')
 
-st.image(banner_image, width=900)
+st.image(banner_image)
 
 st.write('## Take your best guess at whats behind the question mark '
          'and select a button before the time runs out, '
