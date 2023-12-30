@@ -63,18 +63,20 @@ while st.session_state.game_state == 'playing':
             user_choice.write(f'### You chose {st.session_state.user_guess}')
             image_placeholder = st.empty()
             quiz_image = Image.open('images/questionmark.png')
-            image_placeholder.image(quiz_image, width=600)
+            # image_placeholder.image(quiz_image, width=600)
+            image_placeholder.image(quiz_image)
 
             countdown_on = True
             if countdown_on:
-                for i in range(10, -1, -1):
+                for i in range(5, -1, -1):
                     countdown(i, countdown_placeholder)
                     time.sleep(0.5)
                 countdown_on = False
 
             # Update the image placeholder with the final image
             final_image = Image.open(display[1])
-            image_placeholder.image(final_image, width=600)
+            # image_placeholder.image(final_image, width=600)
+            image_placeholder.image(final_image)
 
             if st.session_state.user_guess == "":
                 user_choice.write(f'### No choice was made.')
@@ -82,7 +84,8 @@ while st.session_state.game_state == 'playing':
                           "choices aren't made..." \
                           "your waffles have been stolen!"
                 time.sleep(3)
-                image_placeholder.image(hacker_image, width=600)
+                # image_placeholder.image(hacker_image, width=600)
+                image_placeholder.image(hacker_image)
                 st.session_state.game_state = 'end'
                 play_game = False
 
@@ -96,7 +99,8 @@ while st.session_state.game_state == 'playing':
                     message = "Wrong choice...you've been shenanihacked and " \
                               "your waffles have been stolen!"
                     time.sleep(3)
-                    image_placeholder.image(hacker_image, width=600)
+                    # image_placeholder.image(hacker_image, width=600)
+                    image_placeholder.image(hacker_image)
                     st.session_state.game_state = 'end'
 
                     play_game = False
