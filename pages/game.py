@@ -80,7 +80,7 @@ while st.session_state.game_state == 'playing':
 
             if st.session_state.user_guess == "":
                 user_choice.write(f'### No choice was made.')
-                message = "Shenanihacks can't happen when " \
+                message = "Shenanihacks happen when " \
                           "choices aren't made..." \
                           "your waffles have been stolen!"
                 time.sleep(3)
