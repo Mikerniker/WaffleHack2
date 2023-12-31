@@ -60,9 +60,10 @@ def waffle_game():
                       st.session_state.user_guess = "hacker"
                       player_choices.append("hacker")
 
-
-              user_choice = st.empty()
-              user_choice.write(f'### You chose {st.session_state.user_guess}')
+              for col in st.columns(1):
+                  with col:
+                      user_choice = st.empty()
+                      user_choice.write(f'## You chose {st.session_state.user_guess}')
               image_placeholder = st.empty()
               quiz_image = Image.open('images/questionmark.png')
               # image_placeholder.image(quiz_image, width=600)
