@@ -131,6 +131,7 @@ if st.session_state.game_state == 'end':
     st.session_state.user_guess = ""
 
     game_placeholder.markdown("")
+    time.sleep(2)
 
 if st.button('Restart'):
     st.write("Restart button clicked!")
