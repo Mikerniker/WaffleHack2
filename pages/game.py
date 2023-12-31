@@ -133,7 +133,8 @@ if st.session_state.game_state == 'end':
     game_placeholder.markdown("")
     time.sleep(2)
 
-if st.button('Restart'):
-    st.write("Restart button clicked!")
-    game_placeholder.empty()
-    switch_page("main")
+for col in st.columns(1):
+    with col:
+        if st.button('Restart'):
+            switch_page("main")
+
