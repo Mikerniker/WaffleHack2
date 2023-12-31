@@ -32,8 +32,8 @@ if 'user_guess' not in st.session_state:
 instructions = st.empty()
 waffle_score = st.empty()
 total_guesses = st.empty()
-final_message = st.empty()
 countdown_placeholder = st.empty()
+final_message = st.empty()
 game_placeholder = st.empty()
 
 player_choices = []
@@ -113,7 +113,7 @@ def waffle_game():
 
               waffle_score.write(f"### Waffle Score 🧇: {st.session_state.score}")
               final_message.write(f"### {message}")
-              total_guesses.write(f'Total Tries: {st.session_state.attempts}')
+              total_guesses.write(f'### Total Tries: {st.session_state.attempts}')
               st.session_state.user_guess = ""
 
               if st.session_state.game_state == 'playing':
