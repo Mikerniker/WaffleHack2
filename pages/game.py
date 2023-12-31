@@ -121,6 +121,8 @@ def waffle_game():
                   time.sleep(4)
                   break
 
+waffle_game()
+
 if st.session_state.game_state == 'end':
     # Reset the game state and user guess for the next round
     st.session_state.game_state = 'start'
@@ -128,6 +130,7 @@ if st.session_state.game_state == 'end':
     st.session_state.attempts = 0
     st.session_state.user_guess = ""
 
+    game_placeholder.markdown("")
 
 if st.button('Restart'):
     st.write("Restart button clicked!")
