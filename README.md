@@ -1,7 +1,7 @@
 # Waffled
 
 - [Demo Site](https://waffled.streamlit.app/)
-- The other repo used for deploying to streamlit is here:[WaffleHack](https://github.com/Mikerniker/WaffleHack2)
+- The other original repo is here: [WaffleMe](https://github.com/Mikerniker/WaffleMe)
 - This is a practice hack for the [Shenanihack](https://wafflehackstesting.devpost.com/) 
 hackathon.
 
